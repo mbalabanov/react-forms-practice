@@ -21,35 +21,35 @@ export default function App() {
 
     if (inputName === "name") {
       console.log("name", inputValue);
-      setUserData({ ...userData, name: inputValue });
+      // setUserData({ ...userData, name: inputValue });
     }
     if (inputName === "address") {
       console.log("address", inputValue);
-      setUserData({ ...userData, address: inputValue });
+      // setUserData({ ...userData, address: inputValue });
     }
     if (inputName === "phone") {
       if (containsOnlyNumbers(inputValue)) {
         console.log("phone", inputValue);
-        setUserData({ ...userData, phoneNumber: inputValue });
+        // setUserData({ ...userData, phoneNumber: inputValue });
       } else {
         console.log("Phonenumber is not numeric");
       }
     }
     if (inputName === "email") {
       console.log("email", inputValue);
-      setUserData({ ...userData, emailAddress: inputValue });
+      // setUserData({ ...userData, emailAddress: inputValue });
     }
     if (inputName === "complaint") {
       console.log("complaint", inputValue);
-      setUserData({ ...userData, complaintText: inputValue });
+      // setUserData({ ...userData, complaintText: inputValue });
     }
     if (inputName === "selectedContact") {
       console.log("selectedContact", inputValue);
-      setUserData({ ...userData, selectedContact: inputValue });
+      // setUserData({ ...userData, selectedContact: inputValue });
     }
     if (inputName === "termsConsent" && inputType === "checkbox") {
       console.log("termsConsent", inputChecked);
-      setUserData({ ...userData, termsConsent: inputChecked });
+      // setUserData({ ...userData, termsConsent: inputChecked });
     }
   }
 
@@ -82,41 +82,6 @@ export default function App() {
     } else {
       console.log("The email address is not valid.");
     }
-
-    /*
-    if (inputName === "name") {
-      console.log("name", inputValue);
-      //setUserData({ ...userData, name: inputValue });
-    }
-    if (inputName === "address") {
-      console.log("address", inputValue);
-      //setUserData({ ...userData, address: inputValue });
-    }
-    if (inputName === "phone") {
-      if (containsOnlyNumbers(inputValue)) {
-        console.log("phone", inputValue);
-        //setUserData({ ...userData, phoneNumber: inputValue });
-      } else {
-        console.log("Phonenumber is not numeric");
-      }
-    }
-    if (inputName === "email") {
-      console.log("email", inputValue);
-      //setUserData({ ...userData, emailAddress: inputValue });
-    }
-    if (inputName === "complaint") {
-      console.log("complaint", inputValue);
-      //setUserData({ ...userData, complaintText: inputValue });
-    }
-    if (inputName === "selectedContact") {
-      console.log("selectedContact", inputValue);
-      //setUserData({ ...userData, selectedContact: inputValue });
-    }
-    if (inputName === "termsConsent" && inputType === "checkbox") {
-      console.log("termsConsent", inputChecked);
-      //setUserData({ ...userData, termsConsent: inputChecked });
-    }
-    */
   }
 
   return (
